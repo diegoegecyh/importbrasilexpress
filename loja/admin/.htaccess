@@ -1,0 +1,5 @@
+RewriteEngine on
+
+   DirectoryIndex admin.php
+ 
+   RewriteRule ^([a-z_0-9]*)$ admin.php?p=$1 [L]

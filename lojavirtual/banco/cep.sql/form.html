@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Localização de endereço através do CEP usando jQuery e PHP</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="getEndereco.js" type="text/javascript"></script>     
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $("#getEndereco").click(function(){
+                    getEndereco($("#cep").val());
+                }); 
+             });
+    </script>    
+    </head>
+    <body>
+        Cep: <input type="text" maxlength="8" value="" id="cep"/><input type="button" id="getEndereco" value="Pesquisar"/><br/>
+        <p id="loadingCep"></p>
+        Cidade: <input type="text" readonly="readonly" id="cidade"/><br/>
+        Estado: <input type="text" readonly="readonly" id="estado"/>
+        Rua: <input type="text" readonly="readonly" id="rua"/>
+		Bairro: <input type="text" readonly="readonly" id="bairro"/>
+    </body>
+</html>

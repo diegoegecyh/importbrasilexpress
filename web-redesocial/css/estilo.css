@@ -1,0 +1,76 @@
+body{
+	margin:0;
+	background-color:#FFF;
+	font-family:Arial;
+	font-size:12px;
+}
+.geral{
+	margin:0 auto;
+	height:640px;
+}
+.login{
+	float:right;	
+	font-weight:bold;
+	right:50px;
+	width:460px;	
+	color:#000;
+	padding:15px 155px 15px 15px;
+	
+}
+.imagem_logo{
+	float:left;	
+}
+.imagem_logo strong{
+	font-size:24px;
+}
+.imagem_logo span{
+	font-size:14px;
+	color:#3E55F7;
+}
+.conteudo{
+	position:absolute;
+	width:1280px;
+	height:460px;
+	margin:0 auto;
+	left:50%;
+	top:50%;
+	margin-top:-230px;
+	margin-left:-640px;
+	padding:10px;
+}
+
+.cadastro{
+	float:left;
+	margin-left:180px;
+	margin-top:20px;
+	
+
+}
+.cadastro_campos{
+	padding:10px;
+
+}
+	.cadastro_campos strong{
+		display:block;
+		font-size:18px;
+	}
+	.cadastro_campos label{
+		width:140px;
+		display:inline-block;
+		line-height:30px;
+	}
+	.cadastro_campos #cadastro{
+		margin-top:15px;
+		width:100px
+	}
+	.cadastro_campos input[type=date]{
+		width:150px
+	}
+	.cadastro_campos select{
+		height:22px;
+		margin:2px 0 2px 0;
+	}
+	.cadastro_campos input{
+		padding:5px;
+		width:300px;
+	}

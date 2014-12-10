@@ -1,0 +1,21 @@
+RewriteEngine on
+
+   DirectoryIndex loja.php
+ 
+   RewriteRule ^produto/([0-9]*)$ loja.php?p=produto&id=$1 [L]
+
+   RewriteRule ^produtos/([0-9]*)/([0-9]*)$ loja.php?p=subcategoria&subcategoria=$2&categoria=$1 [L]
+
+   RewriteRule ^busca$ loja.php?p=busca [L]
+
+   RewriteRule ^login$ loja.php?p=login [L]
+
+   RewriteRule ^carrinho$ loja.php?p=carrinho [L]
+
+   RewriteRule ^finalizar-pedido$ loja.php?p=login&finalizar=1 [L]
+  
+   RewriteRule ^pagamento$ loja.php?p=pagamento [L]
+
+   RewriteRule ^pedido-finalizado$ loja.php?p=pedido-finalizado [L]
+
+

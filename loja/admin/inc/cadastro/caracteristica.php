@@ -1,0 +1,57 @@
+<?
+	$tabela = "caracteristica";
+	$campo  = "descricao";
+	
+	include "inc/sql.php";
+
+?>
+
+
+<h1>Caracteristicas</h1>
+
+<form action="" method="post">
+	<input name="id_<?=$tabela?>" type="hidden" value="<?= isset($row) ? $editar_registro : "" ?>" />
+   
+    <label for="id_produto">Produto</label><br/>
+        <select id="id_produto" name="id_produto">
+    	<? 
+			$id = isset($row['id_produto']) ? $row['id_produto'] : 0;
+			carregar_select('produto', 'descricao', $id)
+		?>
+    </select><br/>
+    
+    <label for="titulo">Titulo</label><br/>
+    <input value="<?= isset($row) ? $row['titulo'] : "" ?>" type="text" id="titulo" name="titulo"/><br/>
+    
+    <label for="descricao">Descrição</label><br/>
+    <input value="<?= isset($row) ? $row['descricao'] : "" ?>" type="text" id="descricao" name="descricao"/><br/>
+   
+   	<input type="submit" value="<?= isset($row) ? "Salvar" : "Cadastrar" ?>"/>
+</form>
+
+
+<table border="1">
+	<tr>
+    	<td>Produto</td>
+        <td>Titulo</td>
+		<td>Descrição</td>
+		<td>Editar</td>
+		<td>Excluir</td>
+	</tr>
+<?
+	$sql = "SELECT * FROM $tabela ORDER BY $campo";
+	$res = mysql_query($sql);
+	while($row = mysql_fetch_assoc($res)){
+?>
+	<tr>
+        <td><?=$row['id_produto']?></td> 
+        <td><?=$row['titulo']?></td>
+		<td><?=$row["$campo"]?></td>
+		<td><a href="javascript:editar_registro(<?=$row["id_$tabela"]?>)">Editar</a></td>
+		<td><a href="javascript:excluir_registro('<?=$tabela?>',<?=$row["id_$tabela"]?>)">Excluir</a></td>
+	</tr>
+<?
+	}
+?>
+
+</table>

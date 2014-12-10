@@ -1,0 +1,29 @@
+RewriteEngine on
+
+   DirectoryIndex rsocial.php
+   
+   RewriteRule ^perfil$ rsocial.php?p=perfil&p2=novidades [L]
+   
+   RewriteRule ^novidades$ rsocial.php?p=perfil&p2=novidades [L]
+   
+   RewriteRule ^novidades/([0-9]*)$ rsocial.php?p=perfil_amigo&p2=novidades&perfil=$1 [L]
+     
+   RewriteRule ^amigos$ rsocial.php?p=perfil&p2=amigos [L]
+   
+   RewriteRule ^amigos/([0-9]*)$ rsocial.php?p=perfil_amigo&p2=amigos&perfil=$1 [L]
+   
+   RewriteRule ^perfil_amigo/([0-9]*)$ rsocial.php?p=perfil_amigo&p2=novidades&perfil=$1 [L]
+   
+   RewriteRule ^busca$ rsocial.php?p=perfil&p2=busca [L]
+   
+   RewriteRule ^editar_perfil$ rsocial.php?p=perfil&p2=editar_perfil [L]
+   
+   RewriteRule ^album$ rsocial.php?p=perfil&p2=album [L]
+   
+   RewriteRule ^album/([0-9]*)$ rsocial.php?p=perfil_amigo&p2=album&perfil=$1 [L]
+   
+   RewriteRule ^fotos/([0-9]*)/([0-9]*)$ rsocial.php?p=perfil&p2=imagens&album=$2 [L]
+   
+   RewriteRule ^fotos_amigo/([0-9]*)/([0-9]*)$ rsocial.php?p=perfil_amigo&p2=imagens&album=$2&perfil=$1 [L]
+
+

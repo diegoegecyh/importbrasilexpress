@@ -1,0 +1,16 @@
+RewriteEngine on
+
+   DirectoryIndex lojavirtual.php
+ 
+   RewriteRule ^produto/([0-9]*)$ lojavirtual.php?p=produto&id=$1 [L]
+
+   RewriteRule ^produtos/([0-9]*)/([0-9]*)/([0-9]*)$ lojavirtual.php?p=subcategoria&subcategoria=$3&categoria=$2&marca=$1 [L]
+
+   RewriteRule ^cadastro$ lojavirtual.php?p=cadastro [L]
+   
+   RewriteRule ^carrinho$ lojavirtual.php?p=carrinho [L]
+   
+   RewriteRule ^busca$ lojavirtual.php?p=busca [L]
+
+
+

@@ -1,0 +1,293 @@
+body{
+	margin:0;
+	background-color:#D5D5D5;
+	font-family:Arial;
+	font-size:12px;
+}
+.geral{
+	width:960px;
+	background-color:#FFF;
+	margin:0 auto;
+	box-shadow: 0 -10px 50px #333;
+}
+
+.topo{
+	border-bottom:solid #969696 10px;
+}
+
+.logo{
+	font-size:36px;
+	color:#969696;
+	padding:25px 40px;
+	float:left;
+	font-weight:bold
+}
+
+.caixa_busca{
+	float:left;
+	padding:20px 40px;
+}
+.caixa_busca input{
+	padding:10px;
+	border:solid silver 1px;
+	border-radius:20px;
+}
+.caixa_busca input[type=text]{
+	width:250px;
+	outline:none;
+}
+.caixa_busca span{
+	margin-left:50px;
+}
+
+.caixa_carrinho{
+	float:right;
+	padding:20px 40px;
+	color:#FFF;
+	text-align:center;
+}
+.caixa_carrinho a{
+	color:#FFF;
+}
+
+.caixa_carrinho_fundo{
+	background-color:#969696;
+	padding:10px 30px;
+	border-radius:30px;
+}
+
+.menu{
+	border-right:solid 1px #969696;
+	float:left;
+}
+
+.categoria a{
+	width:220px;
+	padding:10px;
+	background-color:#EAEAEA;
+	border-bottom:solid #969696 1px;
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#818181;
+}
+.subcategoria a{
+	width:220px;
+	padding:10px;
+	background-color:#FFF;
+	border-bottom:dotted #969696 1px;
+	display:none;
+}
+
+.produto{
+	border:solid silver 1px;
+	float:left;
+	margin:20px 0 0 20px;
+	padding:20px;
+	width:170px;
+}
+.produto img{
+	width:170px;
+	display:block;
+}
+.produto strong{
+	font-size:14px;
+	display:block;
+	color:#575757;
+	line-height:18px;
+	height:36px;
+}
+.produto span{
+	font-size:14px;
+	display:block;
+	color:#969696;
+	padding:10px 0;
+}
+.produto a{
+	text-decoration:none;
+	color:#fff;
+	background:#575757;
+	padding:10px;
+	display:inline-block;
+	border-radius:15px;
+	margin-left:50px;
+}
+
+.conteudo{
+	float:left;
+	width:710px;
+}
+
+.produto_detalhe{
+	padding:20px;
+}
+
+.produto_detalhe h1{
+	border-bottom:solid silver 1px;
+	padding-bottom:10px;
+}
+
+.imagem_produto{
+	float:left;
+	margin-right:40px;
+}
+.valor_produto{
+	font-size:24px;
+	display:block;
+}
+
+.produto_detalhe a{
+	text-decoration:none;
+	color:#fff;
+	background:#575757;
+	padding:10px;
+	display:inline-block;
+	border-radius:15px;
+	margin-top:10px;
+}
+
+.valor_original{
+	text-decoration:line-through;
+}
+
+.caminho{
+	margin-left:15px;
+}
+.caminho a{
+	text-decoration:none;
+	padding:5px;
+	display:inline-block;
+	color:#424242;
+}
+
+.img_principal{
+	width:400px;
+}
+
+.login{
+	float:left;
+	margin:20px;
+	border:solid silver 1px;
+	padding:20px;
+}
+	.login strong{
+		display:block;
+		font-size:18px;
+	}
+	.login label{
+		width:50px;
+		display:inline-block;
+		line-height:30px;
+	}
+	.login input[type=button]{
+		float:right;
+	}
+	.login input{
+		padding:5px;
+	}
+
+.carrinho{
+	padding:20px;
+}
+
+.carrinho .cabecalho div{
+	float:left;
+	border:solid silver 1px;
+	padding:5px;
+	font-weight:bold;
+	background-color:#EAEAEA;
+}
+
+.carrinho .item_carrinho div{
+	float:left;
+	border:solid silver 1px;
+	padding:5px;
+	font-weight:bold;
+	min-height:75px;
+}
+
+.foto{
+	width:80px;
+}
+.foto img{
+	width:70px;
+}
+.descricao{
+	width:220px;
+}
+.qtd, .v_unitario, .v_total{
+	width:90px;
+	text-align:center;
+}
+.qtd input{
+	width:114px;
+	text-align:center;
+	border-radius:10px;
+	outline:none;
+}
+.qtd span{
+	font-size:11px;
+	cursor:pointer;
+	display:block;
+	color:#fff;
+	background:#575757;
+	padding:5px;
+	border-radius:10px;
+	margin-top:3px;
+}
+.qtd span:hover{
+	background:#ABABAB;
+}
+.qtd{
+	width:120px;
+}
+
+
+.carrinho .valor_total div{
+	float:left;
+	border:solid silver 1px;
+	padding:5px;
+	font-weight:bold;
+}
+.carrinho .valor_total .total{
+	width:547px;
+	text-align:right;
+}
+.carrinho .valor_total .v_total{
+	background-color:#6B6B6B;
+	border-color:#6B6B6B;
+	width:90px;
+	color:#fff;
+}
+
+.finalizar{
+	background-color:#6B6B6B;
+	color:#fff;
+	padding:10px 20px;
+	text-decoration:none;
+	display:inline-block;
+	margin-top:10px;
+}
+	.finalizar:hover{
+		background-color:#ABABAB;
+	}
+
+
+.pagamento{
+	margin-left:20px;
+}
+.parcela_cartao{
+	margin-top:20px;
+}
+
+.pedido-finalizado{
+	margin-left:20px;
+}
+.pedido-finalizado h2{
+	color:red;
+}
+
+
+
+
